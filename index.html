@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FutureFit</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<canvas id="myDrawing" width="200" height="200">
+		<p>Your browser doesn't support canvas.</p>
+	</canvas>
+	<script>
+		var drawingCanvas = document.getElementById('myDrawing');
+		// Check the element is in the DOM and the browser supports canvas
+		if(drawingCanvas.getContext) {
+		// Initaliase a 2-dimensional drawing context
+			var context = drawingCanvas.getContext('2d');
+		//Canvas commands go here
+		// Create the yellow face
+		context.strokeStyle = "#000000";
+		context.fillStyle = "#FFFF00";
+		context.beginPath();
+		context.arc(100,100,50,0,Math.PI*2,true);
+		context.closePath();
+		context.stroke();
+		context.fill();
+
+
+		}
+	</script>
+
+</body>
+</html>
+
+
+
