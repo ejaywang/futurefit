@@ -23,15 +23,25 @@ $(document).ready(function() {
 
 		var meta = {
 					"measurements": {
-						"custom_neck": 			  {"value":},
+						"neck_base_circumference": 			  {"value":12.26, "unit":unit},
 						"shoulder_breadth" 		  {"value":16.04, "unit":unit},
-						"shoulder_to_wrist":      {"value":21.87, "unit":unit},
 						"armscye_circumference_scye_circ_over_acromion":         {"value":15.37, "unit":unit},
 						"chest_girth_at_scye_chest_circumference_at_scye":       {"value":35.03, "unit":unit},
-						"waist_front_length":     {"value":0.420426, "unit":"m"},
-						"waist_height_preferred": {"value":1.007133, "unit":"m"},
-						"age":                    {"value":1036997258.787752, "unit":"s", "factor":0.000000},
-						"waist_hip_ratio":        {"value":0.799591, "factor":0},
+						"shoulder_to_wrist":      {"value":21.87, "unit":unit},
+						"chest_circumference":    {"value":37.27, "unit":unit},
+						"waist_circumference_pref":  {"value":31.47, "unit":unit},
+						"waist_front_length":     {"value":14.37, "unit":unit},
+						"waist_height_preferred":    {"value":38.65, "unit":unit},
+						"total_crotch_length_crotch_length": {}
+						"hip_circumference_maximum": {"value":38.65, "unit":unit},
+						"hip_circ_max_height": {"value":38.65, "unit":unit},
+						"total_crotch_length_crotch_length": {"value":38.65, "unit":unit},
+						"hip_circ_max_height": {"value":38.65, "unit":unit},
+						"hip_circumference_maximum": {"value":40.49, "unit":unit},
+						"custom_bicep_right": {"value":12.60, "unit":unit},
+						"spine_to_shoulder": {"value":7.33, "unit":unit},
+						"arm_length_shoulder_to_wrist": {"value":21.87, "unit":unit},
+						"crotch_height": {"value":29.39, "unit":unit},
 					},
 					"stature_guess": {"value":1.701519, "unit":"m"},
 					"time": {
