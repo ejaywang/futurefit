@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>FlixFit Measurement Guide</title>
+<style type="text/css">
+body{margin:10px 600px 100px 10px;padding:0}
+h1{margin:0 20px 10px;font:bolder 2.5em cochin,serif}
+table{margin:0;padding:0;border-collapse:collapse;border-spacing:0;font-size:0.9em;border:1px solid #CCCCCC}
+tr:hover{background:#F8F8F8;cursor:default!important}
+th{background:#CCCCCC;padding:3px 15px 2px 5px;text-align:left;font-weight:bolder;white-space:nowrap}
+td{padding:2px 15px 2px 5px;text-align:left;border-top:1px solid #CCCCCC;vertical-align:top;line-height:1.5em}
+td.code{font-family:monospace;white-space:nowrap;padding-top:5px}
+
+#note{position:fixed;top:10px;right:10px;width:550px;height:3.5em;background:#FFFFEE;padding:5px 15px;text-align:center;font-size:0.9em;color:#333333;border-radius:10px;box-shadow:0 1px 2px rgba(0,0,0,0.2)}
+#mannequin{position:fixed;top:50px;right:0;width:570px;height:690px}
+</style>
+</head>
+<body>
+
+<div id="note"></div>
+<div id="mannequin"><canvas id="cside" width="150" height="690" style="background:url(person_side.png) top left no-repeat"></canvas><canvas id="cfront" width="420" height="690" style="background:url(person_front.png) top left no-repeat"></canvas></div>
+<h1>FlixFit Measurement Guide</h1>
+<table><thead>
+<tr><th>Measurement ID</th><th>Description</th></tr>
+</thead><tbody data-note="Hover over or click on a measurement for more details&hellip;">
+<tr data-hash="stature" data-side="" data-front="|~220,11 400,11;|~270,670 400,670;I400,11 400,670" data-note="Typically used to scale all other measurements."><td class="code">stature</td><td>Height from floor to top of head.</td></tr>
+<tr data-hash="custom_neck" data-side="C57,112 57,110 93,110 93,106" data-front="C177,108 177,112 219,112 219,108"><td class="code">custom_neck</td><td>Minimum neck circumference.</td></tr>
+<tr data-hash="neck_base_circumference" data-side="C55,130 60,117 93,104 93,110" data-front="C170,115 175,118 180,130 197,130 214,130 220,118 225,115" data-note="Subjective."><td class="code">neck_base_circumference</td><td>Shirt neck size.</td></tr>
+<tr data-hash="shoulder_breadth" data-front="I116,130 277,130" data-note="Full width of shoulders when arms are against sides.&lt;br /&gt;(measurement shown below is approximate)"><td class="code">shoulder_breadth</td><td>Shoulder span.</td></tr>
+<tr data-hash="armscye_circumference_scye_circ_over_acromion" data-side="C60,165 60,140 70,130 80,130 105,130 110,160 104,170;C=104,170 100,200 60,200 60,165" data-front="C263,130 267,135 269,184 265,194"><td class="code"><small>armscye_circumference_scye_circ_over_acromion</small></td><td>Circumference of arm at shoulders.</td></tr>
+<tr data-hash="chest_girth_at_scye_chest_circumference_at_scye" data-side="C~60,165 60,140 70,130 80,130 105,130 110,160 104,170 100,200 60,200 60,165;C19,185 57,188 60,188 60,188;C98,193 100,194 110,194 115,194" data-front="C138,188 177,185 218,185 258,188"><td class="code"><small>chest_girth_at_scye_chest_circumference_at_scye</small></td><td>Circumference of chest at armpit</td></tr>
+<tr data-hash="chest_circumference" data-side="C17,190 57,193 60,193 60,193;C97,198 100,199 110,199 113,199" data-front="C138,193 177,190 218,190 258,193"><td class="code">chest_circumference</td><td>Circumference of chest at fullest part of bust.</td></tr>
+<tr data-hash="waist_circumference_pref" data-side="C16,304 40,304 43,303 47,303;C72,301 95,299 110,298 114,295" data-front="C131,301 177,304 218,304 264,301" data-note="Subjective."><td class="code">waist_circumference_pref</td><td>Circumference of waist at preferred waist height.</td></tr>
+<tr data-hash="custom_waist" data-side="C=16,304 40,304 43,303 47,303;C=72,301 95,299 110,298 114,295" data-front="C=131,301 177,304 218,304 264,301" data-note="The exact location of this measurement may vary between versions."><td class="code">custom_waist</td><td>Circumference of waist at constant position relative to the torso.</td></tr>
+<tr data-hash="waist_height_preferred" data-side="C~16,304 40,304 43,303 47,303;C~72,301 95,299 110,298 114,295" data-front="C~131,301 177,304 218,304 264,301;I280,302 280,670" data-note="Subjective."><td class="code">waist_height_preferred</td><td>Height from floor to the <code>waist_circumference_pref</code> measurement.</td></tr>
+<tr data-hash="waist_front_length" data-side="C~16,304 40,304 43,303 47,303;C~72,301 95,299 110,298 114,295;C~55,130 60,117 93,104 93,110;C55,130 15,190 19,160 12,254 13,274 14,294 17,304" data-front="C~131,301 177,304 218,304 264,301;C~170,115 175,118 180,130 197,130 214,130 220,118 225,115;|197,129 197,304" data-note="Subjective (varies with preferred waist, neck size)."><td class="code">waist_front_length</td><td>Distance from front of neck to front of waist</td></tr>
+<tr data-hash="vertical_trunk_circumference" data-side="C52,134 15,190 19,160 12,254 13,274 14,294 17,304 18,320 31,350 33,353;C=33,353 53,383 100,390 113,363;C113,363 115,358 123,348 123,323 123,323 119,160 119,160;C=119,160 118,125 80,110 52,134" data-front="C148,124 160,200 199,300 199,376"><td class="code">vertical_trunk_circumference</td><td>Circumference around torso, between legs and over shoulder.</td></tr>
+<tr data-hash="total_crotch_length_crotch_length" data-side="C~16,304 40,304 43,303 47,303;C~72,301 95,299 110,298 114,295;C17,303 18,312 30,353 33,353;C113,363 126,340 127,325 113,294;C=33,353 53,383 100,390 113,363" data-front="C~131,301 177,304 218,304 264,301;|199,302 199,375" data-note="Subjective, based on waist height."><td class="code">total_crotch_length_crotch_length</td><td>Measurement from front waist, under crotch, to back waist.</td></tr>
+<tr data-hash="hip_circumference_maximum" data-side="C32,354 40,354 59,354 60,353;C67,353 85,351 110,349 122,342" data-front="C127,351 177,354 218,354 269,351"><td class="code">hip_circumference_maximum</td><td>Maximum hip circumference.</td></tr>
+<tr data-hash="hip_circ_max_height" data-side="C~32,354 40,354 59,354 60,353;C~67,353 85,351 110,349 122,342" data-front="C~127,351 177,354 218,354 269,351;I280,351 280,670"><td class="code">hip_circ_max_height</td><td>Height from floor to the <code>hip_circumference_maximum</code> measurement.</td></tr>
+<tr data-hash="waist_hip_ratio" data-side="C16,304 40,304 43,303 47,303;C72,301 95,299 110,298 114,295;C32,354 40,354 59,354 60,353;C67,353 85,351 110,349 122,342" data-front="C131,301 177,304 218,304 264,301;C127,351 177,354 218,354 269,351"><td class="code">waist_hip_ratio</td><td>Ratio of <code>waist_circumference_pref</code> to <code>hip_circumference_maximum</code>.</td></tr>
+<tr data-hash="custom_hips" data-side="C=32,354 40,354 59,354 60,353;C=67,353 85,351 110,349 122,342" data-front="C=127,351 177,354 218,354 269,351" data-note="The exact location of this measurement may vary between versions."><td class="code">custom_hips</td><td>Circumference of hips at a constant position relative to the torso.</td></tr>
+<tr data-hash="hip_breadth_sitting" data-front="I=128,353 268,353" data-note="Taken from sitting pose; inferred.&lt;br /&gt;(measurement shown below is approximate)"><td class="code">hip_breadth_sitting</td><td>Maximum hip breadth when sitting.</td></tr>
+<tr data-hash="custom_bicep_left" data-side="C60,190 65,180 90,180 98,190" data-front="C296,180 277,190 277,190 266,198" data-note="This is approximately the maximum circumference. You should not rely on left/right values, as some cameras reverse the image they capture. It is better to take the largest or average measurement."><td class="code">custom_bicep_left</td><td>Circumference of the left bicep just below the armpit.</td></tr>
+<tr data-hash="custom_bicep_right" data-side="" data-front="C101,180 120,190 120,190 131,198" data-note="This is approximately the maximum circumference. You should not rely on left/right values, as some cameras reverse the image they capture. It is better to take the largest or average measurement."><td class="code">custom_bicep_right</td><td>Circumference of the right bicep just below the armpit.</td></tr>
+<tr data-hash="spine_to_shoulder" data-side="*~96,110,5;*~80,130,5;C96,110 80,120 85,120 80,130" data-front="*~197,110,5;*~263,130,5;C=197,110 210,116 240,121 263,130"><td class="code">spine_to_shoulder</td><td>Distance from the top of the spine to the shoulders.</td></tr>
+<tr data-hash="spine_to_elbow" data-side="*~96,110,5;*~80,130,5;*~75,225,5;C96,110 80,120 85,120 80,130 75,140 80,170 75,225" data-front="*~197,110,5;*~263,130,5;*~323,225,5;C=197,110 210,116 240,121 263,130;C263,130 278,135 323,225 323,225"><td class="code">spine_to_elbow</td><td>Distance from the top of the spine to the elbows.</td></tr>
+<tr data-hash="arm_length_spine_to_wrist" data-side="*~96,110,5;*~80,130,5;*~75,225,5;*~60,300,5;C96,110 80,120 85,120 80,130 75,140 80,170 75,225 74,240 70,280 60,300" data-front="*~197,110,5;*~263,130,5;*~323,225,5;*~362,300,5;C=197,110 210,116 240,121 263,130;C263,130 278,135 323,225 323,225 335,245 355,280 362,300"><td class="code">arm_length_spine_to_wrist</td><td>Distance from the top of the spine to the wrists.</td></tr>
+<tr data-hash="arm_length_shoulder_to_elbow" data-side="*~80,130,5;*~75,225,5;C80,130 75,140 80,170 75,225" data-front="*~263,130,5;*~323,225,5;C263,130 278,135 323,225 323,225"><td class="code">arm_length_shoulder_to_elbow</td><td>Distance from the shoulders to the elbows.</td></tr>
+<tr data-hash="arm_length_shoulder_to_wrist" data-side="*~80,130,5;*~75,225,5;*~60,300,5;C80,130 75,140 80,170 75,225 74,240 70,280 60,300" data-front="*~263,130,5;*~323,225,5;*~362,300,5;C263,130 278,135 323,225 323,225 335,245 355,280 362,300"><td class="code">arm_length_shoulder_to_wrist</td><td>Distance from the shoulders to the wrists.</td></tr>
+<tr data-hash="crotch_height" data-side="" data-front="*~199,375,5;|~205,375 280,375;I280,375 280,670"><td class="code">crotch_height</td><td>Height from floor to base of crotch.</td></tr>
+<tr data-hash="thigh_circumference" data-side="C34,383 34,397 106,395 106,383" data-front="C205,390 205,395 269,393 267,383"><td class="code">thigh_circumference</td><td>Maximum thigh circumference when standing.</td></tr>
+<tr data-hash="thigh_circumference_max_sitting" data-side="C=34,383 34,397 106,395 106,383" data-front="C=205,390 205,395 269,393 267,383" data-note="Taken from sitting pose; inferred.&lt;br /&gt;(measurement shown below is approximate)"><td class="code">thigh_circumference_max_sitting</td><td>Maximum thigh circumference when sitting.</td></tr>
+<tr data-hash="knee_height" data-side="" data-front="*~237,485,5;|~243,485 280,485;I280,485 280,670"><td class="code">knee_height</td><td>Height from floor to centre of knees (average)</td></tr>
+<tr data-hash="buttock_knee_length" data-side="I=55,500 127,320" data-front="" data-note="Taken from sitting pose; inferred.&lt;br /&gt;(measurement shown below is approximate)"><td class="code">buttock_knee_length</td><td>Distance from back of buttocks to front of knees when sitting.</td></tr>
+<tr data-hash="age" data-note="This is a guessed value. It should not be assumed to have any useful accuracy."><td class="code">age</td><td>Guessed age of the person</td></tr>
+<tr data-hash="female" data-note="This is a guessed value. It should not be assumed to have any useful accuracy."><td class="code">female</td><td>Guessed gender of the person, on a scale from 0 (male) to 1 (female)</td></tr>
+</tbody></table>
+<p style="font-style:italic">Note that these measurements, their names and accuracies may change in future releases.</p>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript"><!--
+var fixed=false,h0;
+function path(c,t,m,y){
+	c.beginPath();
+	switch(m){
+	case '*':
+		if(t.length!=1)break;
+		c.arc(t[0][0],+t[0][1]+y,t[0][2]||1,0,Math.PI*2);
+		break;
+	case '|':
+		if(t.length!=2)break;
+		c.moveTo(t[0][0],+t[0][1]+y);
+		c.lineTo(t[1][0],+t[1][1]+y);
+		break;
+	case 'I':
+		if(t.length!=2)break;
+		var x0=+t[0][0],x1=+t[1][0],y0=+t[0][1]+y,y1=+t[1][1]+y,dx=x1-x0,dy=y1-y0,sc=1/Math.sqrt(dx*dx+dy*dy),sc7=7*sc,sc5=5*sc,sc2=2*sc;
+		c.moveTo(x0,y0);
+		c.lineTo(x1,y1);
+		c.stroke();
+		c.beginPath();
+		if(c.setLineDash)c.setLineDash([]);
+		c.moveTo(x0-dy*sc5,y0+dx*sc5);
+		c.lineTo(x0+dy*sc5,y0-dx*sc5);
+		c.moveTo(x0+dx*sc7-dy*sc2,y0+dy*sc7+dx*sc2);
+		c.lineTo(x0+dx*sc2,y0+dy*sc2);
+		c.lineTo(x0+dx*sc7+dy*sc2,y0+dy*sc7-dx*sc2);
+		c.moveTo(x1-dy*sc5,y1+dx*sc5);
+		c.lineTo(x1+dy*sc5,y1-dx*sc5);
+		c.moveTo(x1-dx*sc7-dy*sc2,y1-dy*sc7+dx*sc2);
+		c.lineTo(x1-dx*sc2,y1-dy*sc2);
+		c.lineTo(x1-dx*sc7+dy*sc2,y1-dy*sc7-dx*sc2);
+		break;
+	case 'C':
+		if(t.length<4)break;
+		c.moveTo(t[0][0],+t[0][1]+y);
+		for(j=1;j+2<t.length;j+=3)c.bezierCurveTo(t[j][0],+t[j][1]+y,t[j+1][0],+t[j+1][1]+y,t[j+2][0],+t[j+2][1]+y);
+		break;
+	}
+	c.stroke();
+}
+function draw(o,n,k){
+	var v=$('#c'+n)[0],c=v.getContext('2d'),i,j,t,q,pp,f;
+	if(!k)v.width=v.width;
+	if(!o)return;
+	var p=(o.data(n)+'').split(';');
+	
+	c.lineWidth=2;
+	for(i=0;i<p.length;++i){
+		f=p[i].charAt(1);q=p[i].substr((+f+''===f||f==='+'||f==='-'||f==='.')?1:2).split(' ');t=[];
+		for(j=0;j<q.length;++j)t.push(q[j].split(','));
+		if(f==='~'){
+			if(k&&p[i].charAt(0)=='C')continue;
+			c.strokeStyle='rgba(255,255,255,0.5)';
+			path(c,t,p[i].charAt(0),1);
+			c.strokeStyle='rgba(0,0,0,0.15)';
+		}else if(f==='='){
+			c.strokeStyle='rgba(255,128,0,0.3)';
+			if(c.setLineDash)c.setLineDash([6,3]);
+		}else c.strokeStyle='#FF8000';
+		path(c,t,p[i].charAt(0),0);
+		if(c.setLineDash)c.setLineDash([]);
+	}
+}
+function rev(o,f,c){
+	if(!f&&fixed)return;
+	if(fixed&&!c){$('tr').css('background','')}
+	if(fixed=f===1){o.css('background','#FFFFCC');window.location.hash=h0=o.data('hash')||''}
+	$('#note').html(c?'Showing multiple measurements.<br />Click on any measurement on the left for more details.':o.data('note')||'');
+	draw(o,'side',c);
+	draw(o,'front',c);
+}
+function hsh(){
+	var h=window.location.hash.replace(/^#/,''),o=$('[data-hash="'+h+'"]');
+	if(h===h0)return;
+	h0=h;
+	if(h==='all'){
+		fixed=1;
+		$('tr').css('background','#FFFFCC');
+		$('#note').html('Showing all measurements.<br />Click on any measurement on the left for more details.');
+		draw(0,'side');
+		draw(0,'front');
+		$('tbody tr').each(function(){
+			var o=$(this);
+			draw(o,'side',1);
+			draw(o,'front',1);
+		});
+	}else if(h.length>0&&o.length)rev(o,1);
+	else rev($('tbody:first'),2)
+}
+$(document).ready(function(){
+	$('tbody tr')
+	.mouseenter(function(e){rev($(this))})
+	.click(function(e){rev($(this),1,e.shiftKey||e.ctrlKey||e.metaKey);e.stopPropagation()});
+	$('tbody').mouseleave(function(e){rev($(this))});
+	$('body').click(function(e){rev($('tbody:first'),2);window.location.hash=''});
+	hsh();
+	if(typeof window.onhashchange!='undefined')window.onhashchange=hsh;
+})
+//--></script>
+</body>
+</html>
